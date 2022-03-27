@@ -25,38 +25,38 @@ export function initPlay(param){
         </div>
     </div>
     `
-    // var timeleft = 5;
-    // var downloadTimer = setInterval(function(){
-    //     if(timeleft <= 0){
-    //         param.goTo("/instructions/")
-    //         clearInterval(downloadTimer);
-    //     } else ({
-    //         document.getElementById("countdown").innerHTML = timeleft + " seconds remaining";
-    //     }
-    //     timeleft -= 1;
-    // }, 1000);
+    var timeleft = 5;
+    var downloadTimer = setInterval(function(){
+        if(timeleft <= 0){
+            param.goTo("/instructions/")
+            clearInterval(downloadTimer);
+        } else {
+            document.getElementById("countdown").innerHTML = timeleft + " seconds remaining";
+        }
+        timeleft --;
+    }, 1000);
     
     const imgContainer = div.querySelector(".img-container").children;
-        for (const hand of imgContainer) { 
-            hand.addEventListener("click", () => {  
-             const type = hand.getAttribute("play");
-             // clearInterval(downloadTimer);
-             console.log(type);
+    for (const hand of imgContainer) { 
+        hand.addEventListener("click", () => {  
+            const type = hand.getAttribute("play");
+            setTimeout(() => {
+                param.goTo("/results");
+                clearInterval(downloadTimer);
+            }, 5000);
+            clearInterval(downloadTimer);
+            console.log(type);
      
-             if (type === "scissors") {
-                state.setMove("scissors");
-                console.log(type);
-             } else if (type === "rock") {
+            if (type === "scissors") {
+            state.setMove("scissors");
+            console.log(type);
+            } else if (type === "rock") {
                 state.setMove("rock");
-             } else if (type === "paper") {
+            } else if (type === "paper") {
                 state.setMove("paper");
-             }
-            });
-        }
-
-    setTimeout(() => {
-        param.goTo("/results");
-    }, 5000);
+            }
+        });
+    }
 
     const style = document.createElement("style");
     style.innerHTML =`
@@ -90,7 +90,8 @@ export function initPlay(param){
           width: 100px:
           height: 100px;
       }
-    ` 
+    `
+
     div.appendChild(style);
     return div;
 }

@@ -20,7 +20,7 @@ export function initResults(param){
   let background;
   let imagen;
   if (whoWins === "wins") {
-    imagen = resultImages.win;
+    imagen = resultImages.win; // empate buscar imagen 
     background = "rgba(136, 137, 73, 0.6)";
   } else if (whoWins === "loss") {
     imagen = resultImages.loss;
