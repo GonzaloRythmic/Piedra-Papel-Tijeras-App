@@ -12,7 +12,7 @@
 
         "dev": "parcel serve ./src/index.html",
 
-        "build": "parcel build ./src/index.html --dist-dir build --public-url /dwf-m5",
+        "build": "parcel build ./src/index.html --dist-dir build --public-url /cap5-FinalChallange",
 
         "deploy": "gh-pages -d build"
 
