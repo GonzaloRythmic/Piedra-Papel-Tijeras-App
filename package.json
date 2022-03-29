@@ -12,7 +12,7 @@
 
         "dev": "parcel serve ./src/index.html",
 
-        "build": "parcel build ./src/index.html --dist-dir build --public-url /cap5-FinalChallange",
+        "build": "parcel build ./src/index.html --dist-dir build --public-url /gonzalorythmic.github.io",
 
         "deploy": "gh-pages -d build"
 
