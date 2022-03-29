@@ -22,9 +22,15 @@ export function initHome(param): HTMLElement {
         display: flex;
         justify-content: center;
         margin-top: 75px;
+        text-align: center; 
       }
       .home-button{
         background-color: black;
+      }
+      .img-containter-container{
+        width: 100%;
+        display: flex;
+        justify-content: center;
       }
       .img-container{
         width: 100%;
@@ -33,9 +39,25 @@ export function initHome(param): HTMLElement {
         column-gap: 50px;
         position: absolute; bottom: 0;
       }
+      .img-mini-container{
+        display: flex;
+        justify-content: center;
+      }
+      @media (min-width: 600px){
+        .img-container{
+          width: 322px;
+          height: 180px
+        }
+      }
       .img{
         width: 56px;
         height: 128px;
+      }
+      @media (min-width: 600px){
+        .img{
+          width: 45px;
+          height: 100px
+        }
       }
     `
 
@@ -49,14 +71,19 @@ export function initHome(param): HTMLElement {
         <h2 class = home-title>Piedra Papel o Tijeras</h2>
       </div>
       <div class = home-button-container>
-        <button class = home-button>
-          <img src="${button}">
-        </button>
+        <img class = home-button src="${button}">
       </div>
-      <div class = img-container>
-        <img class = img src="${rock}">
-        <img class = img src="${sisors}">
-        <img class = img src="${paper}">
+      <div class = img-containter-container>
+        <div class = img-container>
+          <div class = img-mini-container>
+            <img class = img src="${rock}">
+          </div>
+          <div class = img-mini-container>
+            <img class = img src="${sisors}">
+          </div>  
+          <div class = img-mini-container>
+            <img class = img src="${paper}">
+          </div>
       </div>
       `;
 

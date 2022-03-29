@@ -14,11 +14,19 @@ export function initInstructions(param){
           y elegí: piedra, papel o tijera antes de que pasen los 5 segundos.
         </h2>
       </div>
+      <div class = button-container>
         <img class = home-button src="${playButton}">
+      </div>
       <div class = img-container>
-        <img class = img src="${rock}">
-        <img class = img src="${sisors}">
-        <img class = img src="${paper}">
+        <div class = img-mini-container>
+          <img class = img src="${rock}">
+        </div>
+        <div class = img-mini-container>
+          <img class = img src="${sisors}">
+        </div>
+        <div class = img-mini-container>
+          <img class = img src="${paper}">
+        </div>
       </div>
   `;
 
@@ -35,6 +43,12 @@ export function initInstructions(param){
         .home-title{
           font-family: "Permanent Marker";
           font-size: 40px;
+        }
+        .button-container{
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          margin-top: 50px;
         }
         .home-button-container{
           width: 100%;
@@ -53,9 +67,13 @@ export function initInstructions(param){
           column-gap: 50px;
           position: absolute; bottom: 0;
         }
+        .img-mini-container{
+          display: flex;
+          justify-content: center;
+        }
         .img{
           width: 56px;
-          height: 128px;
+          height: 100px;
         }
   `
 

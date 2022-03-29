@@ -1,10 +1,12 @@
 import { state } from "../../../state"; 
 
 const resultImages = {
-    tie: require("url:../../../../images/piedra.png"),
+    tie: require("url:../../../../images/empate.png"),
     win: require("url:../../../../images/win.png"),
     loss: require("url:../../../../images/lose.png"),
 };
+resultImages.tie.innerHTML = `
+<h2>Hola</h2>`
 
 export function initResults(param){
   const div = document.createElement("div");
