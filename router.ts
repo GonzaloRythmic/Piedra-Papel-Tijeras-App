@@ -3,7 +3,7 @@ import {initInstructions} from "./src/components/pages/intructions";
 import {initPlay} from "./src/components/pages/game";
 import {initResults} from "./src/components/pages/results";
 
-const BASE_PATH = "/dwf-m5";
+const BASE_PATH = "/cap5-FinalChallange";
 
 const routes = [
   {
@@ -52,7 +52,7 @@ export function initRouter(container: Element) {
     }
   }
 
-  if (location.pathname == "/" || location.pathname == "/dwf-m5/") {
+  if (location.pathname == "/" || location.pathname == "/cap5-FinalChallange/") {
     goTo("/welcome");
   } else {
     handleRoute(location.pathname);
