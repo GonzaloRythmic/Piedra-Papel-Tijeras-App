@@ -89,7 +89,6 @@ const state = {
     }
   },
 
-  //SAVE THE MOVEMENT AND SUMMON THE SCORE
   setMove(move: Play) {
     const currentState = this.getState();
     currentState.currentGame.myPlay = move;

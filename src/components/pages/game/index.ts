@@ -4,9 +4,9 @@ export function initPlay(param){
     const div = document.createElement("div");
     div.className = "container";
 
-    const rock = require("url:../../../../images/piedra.png")
-    const sisors = require("url:../../../../images/tijera.png")
-    const paper = require("url:../../../../images/papel.png")
+    const rock = require("url:../../../../images/piedra. jpg")
+    const sisors = require("url:../../../../images/tijera. jpg")
+    const paper = require("url:../../../../images/papel. jpg")
 
     div.innerHTML = `
     <div class = countdown-container>

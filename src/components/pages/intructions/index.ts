@@ -2,10 +2,10 @@ export function initInstructions(param){
   const div = document.createElement("div");
   div.className = "container";
     
-  const rock = require("url:../../../../images/piedra.png")
-  const sisors = require("url:../../../../images/tijera.png")
-  const paper = require("url:../../../../images/papel.png")
-  const playButton = require("url:../../../../images/jugarBoton.png")
+  const rock = require("url:../../../../images/piedra. jpg")
+  const sisors = require("url:../../../../images/tijera. jpg")
+  const paper = require("url:../../../../images/papel. jpg")
+  const playButton = require("url:../../../../images/jugarBoton. jpg")
   
   div.innerHTML = `
       <div class = home-title-container>

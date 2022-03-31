@@ -1,9 +1,9 @@
 import { state } from "../../../state"; 
 
 const resultImages = {
-    tie: require("url:../../../../images/empate.png"),
-    win: require("url:../../../../images/win.png"),
-    loss: require("url:../../../../images/lose.png"),
+    tie: require("url:../../../../images/empate. jpg"),
+    win: require("url:../../../../images/win. jpg"),
+    loss: require("url:../../../../images/lose. jpg"),
 };
 
 export function initResults(param){
@@ -30,7 +30,7 @@ export function initResults(param){
     background = "rgba(106, 112, 101, 0.6)";
   }
     
-  const button = require("url:../../../../images/volverAJugar.png");
+  const button = require("url:../../../../images/volverAJugar. jpg");
   const style = document.createElement("style");
   div.innerHTML = `
     <div>

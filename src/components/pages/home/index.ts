@@ -61,10 +61,10 @@ export function initHome(param): HTMLElement {
       }
     `
 
-    const rock = require("url:../../../../images/piedra.png")
-    const sisors = require("url:../../../../images/tijera.png")
-    const paper = require("url:../../../../images/papel.png")
-    const button = require("url:../../../../images/boton.png")
+    const rock = require("url:../../../../images/piedra. jpg")
+    const sisors = require("url:../../../../images/tijera. jpg")
+    const paper = require("url:../../../../images/papel. jpg")
+    const button = require("url:../../../../images/boton. jpg")
   
     div.innerHTML = `
       <div class = home-title-container>
