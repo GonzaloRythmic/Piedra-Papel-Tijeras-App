@@ -5,8 +5,6 @@ const resultImages = {
     win: require("url:../../../../images/win.png"),
     loss: require("url:../../../../images/lose.png"),
 };
-resultImages.tie.innerHTML = `
-<h2>Hola</h2>`
 
 export function initResults(param){
   const div = document.createElement("div");

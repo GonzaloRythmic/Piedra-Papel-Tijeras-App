@@ -52,7 +52,7 @@ export function initRouter(container: Element) {
     }
   }
 
-  if (location.pathname == "/" || location.pathname == "/cap5-FinalChallange/") {
+  if (location.pathname == "/" || location.pathname == "/cap5-FinalChallange") {
     goTo("/welcome");
   } else {
     handleRoute(location.pathname);
