@@ -14,7 +14,7 @@
 
         "build": "parcel build ./src/index.html --dist-dir build --public-url /cap5-FinalChallange",
 
-        "deploy": "gh-pages -d ./dist"
+        "deploy": "gh-pages -d build"
 
     },
 
