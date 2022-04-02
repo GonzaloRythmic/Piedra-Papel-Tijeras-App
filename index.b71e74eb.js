@@ -652,10 +652,10 @@ function initHome(param) {
         }
       }
     `;
-    const rock = require("url:../../../../images/piedra.png");
-    const sisors = require("url:../../../../images/tijera.png");
-    const paper = require("url:../../../../images/papel.png");
-    const button = require("url:../../../../images/boton.png");
+    const rock = require("url:../../../images/piedra. jpg");
+    const sisors = require("url:../../../images/tijera. jpg");
+    const paper = require("url:../../../images/papel. jpg");
+    const button = require("url:../../../images/boton. jpg");
     div.innerHTML = `
       <div class = home-title-container>
         <h2 class = home-title>Piedra Papel o Tijeras</h2>
@@ -682,8 +682,38 @@ function initHome(param) {
     return div;
 }
 
-},{"url:../../../../images/piedra.png":"amxdg","url:../../../../images/tijera.png":"kDm5W","url:../../../../images/papel.png":"5tNYp","url:../../../../images/boton.png":"cyP7f","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"amxdg":[function(require,module,exports) {
-module.exports = require('./helpers/bundle-url').getBundleURL('7UhFu') + "piedra.f3e14d13.png" + "?" + Date.now();
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","url:../../../images/piedra. jpg":"lfBEu","url:../../../images/tijera. jpg":"1o7Oa","url:../../../images/papel. jpg":"2AtI3","url:../../../images/boton. jpg":"l4Caj"}],"gkKU3":[function(require,module,exports) {
+exports.interopDefault = function(a) {
+    return a && a.__esModule ? a : {
+        default: a
+    };
+};
+exports.defineInteropFlag = function(a) {
+    Object.defineProperty(a, '__esModule', {
+        value: true
+    });
+};
+exports.exportAll = function(source, dest) {
+    Object.keys(source).forEach(function(key) {
+        if (key === 'default' || key === '__esModule' || dest.hasOwnProperty(key)) return;
+        Object.defineProperty(dest, key, {
+            enumerable: true,
+            get: function() {
+                return source[key];
+            }
+        });
+    });
+    return dest;
+};
+exports.export = function(dest, destName, get) {
+    Object.defineProperty(dest, destName, {
+        enumerable: true,
+        get: get
+    });
+};
+
+},{}],"lfBEu":[function(require,module,exports) {
+module.exports = require('./helpers/bundle-url').getBundleURL('7UhFu') + "piedra.16af652e. jpg" + "?" + Date.now();
 
 },{"./helpers/bundle-url":"lgJ39"}],"lgJ39":[function(require,module,exports) {
 "use strict";
@@ -720,46 +750,16 @@ exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
 exports.getOrigin = getOrigin;
 
-},{}],"kDm5W":[function(require,module,exports) {
-module.exports = require('./helpers/bundle-url').getBundleURL('7UhFu') + "tijera.80febae3.png" + "?" + Date.now();
+},{}],"1o7Oa":[function(require,module,exports) {
+module.exports = require('./helpers/bundle-url').getBundleURL('7UhFu') + "tijera.a2cc7fca. jpg" + "?" + Date.now();
 
-},{"./helpers/bundle-url":"lgJ39"}],"5tNYp":[function(require,module,exports) {
-module.exports = require('./helpers/bundle-url').getBundleURL('7UhFu') + "papel.327d2f47.png" + "?" + Date.now();
+},{"./helpers/bundle-url":"lgJ39"}],"2AtI3":[function(require,module,exports) {
+module.exports = require('./helpers/bundle-url').getBundleURL('7UhFu') + "papel.06e7365e. jpg" + "?" + Date.now();
 
-},{"./helpers/bundle-url":"lgJ39"}],"cyP7f":[function(require,module,exports) {
-module.exports = require('./helpers/bundle-url').getBundleURL('7UhFu') + "boton.9d40fc65.png" + "?" + Date.now();
+},{"./helpers/bundle-url":"lgJ39"}],"l4Caj":[function(require,module,exports) {
+module.exports = require('./helpers/bundle-url').getBundleURL('7UhFu') + "boton.52132e3b. jpg" + "?" + Date.now();
 
-},{"./helpers/bundle-url":"lgJ39"}],"gkKU3":[function(require,module,exports) {
-exports.interopDefault = function(a) {
-    return a && a.__esModule ? a : {
-        default: a
-    };
-};
-exports.defineInteropFlag = function(a) {
-    Object.defineProperty(a, '__esModule', {
-        value: true
-    });
-};
-exports.exportAll = function(source, dest) {
-    Object.keys(source).forEach(function(key) {
-        if (key === 'default' || key === '__esModule' || dest.hasOwnProperty(key)) return;
-        Object.defineProperty(dest, key, {
-            enumerable: true,
-            get: function() {
-                return source[key];
-            }
-        });
-    });
-    return dest;
-};
-exports.export = function(dest, destName, get) {
-    Object.defineProperty(dest, destName, {
-        enumerable: true,
-        get: get
-    });
-};
-
-},{}],"dwVp9":[function(require,module,exports) {
+},{"./helpers/bundle-url":"lgJ39"}],"dwVp9":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "initInstructions", ()=>initInstructions
@@ -767,10 +767,10 @@ parcelHelpers.export(exports, "initInstructions", ()=>initInstructions
 function initInstructions(param) {
     const div = document.createElement("div");
     div.className = "container";
-    const rock = require("url:../../../../images/piedra.png");
-    const sisors = require("url:../../../../images/tijera.png");
-    const paper = require("url:../../../../images/papel.png");
-    const playButton = require("url:../../../../images/jugarBoton.png");
+    const rock = require("url:../../../images/piedra. jpg");
+    const sisors = require("url:../../../images/tijera. jpg");
+    const paper = require("url:../../../images/papel. jpg");
+    const playButton = require("url:../../../images/jugarBoton. jpg");
     div.innerHTML = `
       <div class = home-title-container>
         <h2 class = home-title> 
@@ -844,8 +844,8 @@ function initInstructions(param) {
     return div;
 }
 
-},{"url:../../../../images/piedra.png":"amxdg","url:../../../../images/tijera.png":"kDm5W","url:../../../../images/papel.png":"5tNYp","url:../../../../images/jugarBoton.png":"6tT5o","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"6tT5o":[function(require,module,exports) {
-module.exports = require('./helpers/bundle-url').getBundleURL('7UhFu') + "jugarBoton.b6743743.png" + "?" + Date.now();
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","url:../../../images/piedra. jpg":"lfBEu","url:../../../images/tijera. jpg":"1o7Oa","url:../../../images/papel. jpg":"2AtI3","url:../../../images/jugarBoton. jpg":"159TZ"}],"159TZ":[function(require,module,exports) {
+module.exports = require('./helpers/bundle-url').getBundleURL('7UhFu') + "jugarBoton.d6b01f0d. jpg" + "?" + Date.now();
 
 },{"./helpers/bundle-url":"lgJ39"}],"kjn0T":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
@@ -856,9 +856,9 @@ var _state = require("../../../state");
 function initPlay(param) {
     const div = document.createElement("div");
     div.className = "container";
-    const rock = require("url:../../../../images/piedra.png");
-    const sisors = require("url:../../../../images/tijera.png");
-    const paper = require("url:../../../../images/papel.png");
+    const rock = require("url:../../../images/piedra. jpg");
+    const sisors = require("url:../../../images/tijera. jpg");
+    const paper = require("url:../../../images/papel. jpg");
     div.innerHTML = `
     <div class = countdown-container>
         <div class = countdown id="countdown"></div>
@@ -948,7 +948,7 @@ function initPlay(param) {
     return div;
 }
 
-},{"url:../../../../images/piedra.png":"amxdg","url:../../../../images/tijera.png":"kDm5W","url:../../../../images/papel.png":"5tNYp","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","../../../state":"1Yeju"}],"1Yeju":[function(require,module,exports) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","../../../state":"1Yeju","url:../../../images/piedra. jpg":"lfBEu","url:../../../images/tijera. jpg":"1o7Oa","url:../../../images/papel. jpg":"2AtI3"}],"1Yeju":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "state", ()=>state
@@ -1053,12 +1053,10 @@ parcelHelpers.export(exports, "initResults", ()=>initResults
 );
 var _state = require("../../../state");
 const resultImages = {
-    tie: require("url:../../../../images/empate.png"),
-    win: require("url:../../../../images/win.png"),
-    loss: require("url:../../../../images/lose.png")
+    tie: require("url:../../../images/empate. jpg"),
+    win: require("url:../../../images/win. jpg"),
+    loss: require("url:../../../images/lose. jpg")
 };
-resultImages.tie.innerHTML = `
-<h2>Hola</h2>`;
 function initResults(param) {
     const div = document.createElement("div");
     div.className = "container__results";
@@ -1080,7 +1078,7 @@ function initResults(param) {
         imagen = resultImages.tie;
         background = "rgba(106, 112, 101, 0.6)";
     }
-    const button = require("url:../../../../images/volverAJugar.png");
+    const button = require("url:../../../images/boton. jpg");
     const style = document.createElement("style");
     div.innerHTML = `
     <div>
@@ -1143,17 +1141,14 @@ function initResults(param) {
     return div;
 }
 
-},{"url:../../../../images/lose.png":"8mAUT","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","../../../state":"1Yeju","url:../../../../images/win.png":"39jBf","url:../../../../images/volverAJugar.png":"2sCs3","url:../../../../images/empate.png":"f2ur6"}],"8mAUT":[function(require,module,exports) {
-module.exports = require('./helpers/bundle-url').getBundleURL('7UhFu') + "lose.32c2c1f0.png" + "?" + Date.now();
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","../../../state":"1Yeju","url:../../../images/empate. jpg":"135cm","url:../../../images/win. jpg":"cDXy9","url:../../../images/lose. jpg":"bSzLa","url:../../../images/boton. jpg":"l4Caj"}],"135cm":[function(require,module,exports) {
+module.exports = require('./helpers/bundle-url').getBundleURL('7UhFu') + "empate.fac5d423. jpg" + "?" + Date.now();
 
-},{"./helpers/bundle-url":"lgJ39"}],"39jBf":[function(require,module,exports) {
-module.exports = require('./helpers/bundle-url').getBundleURL('7UhFu') + "win.9ebadb8d.png" + "?" + Date.now();
+},{"./helpers/bundle-url":"lgJ39"}],"cDXy9":[function(require,module,exports) {
+module.exports = require('./helpers/bundle-url').getBundleURL('7UhFu') + "win.0760a784. jpg" + "?" + Date.now();
 
-},{"./helpers/bundle-url":"lgJ39"}],"2sCs3":[function(require,module,exports) {
-module.exports = require('./helpers/bundle-url').getBundleURL('7UhFu') + "volverAJugar.f6fd4bd9.png" + "?" + Date.now();
-
-},{"./helpers/bundle-url":"lgJ39"}],"f2ur6":[function(require,module,exports) {
-module.exports = require('./helpers/bundle-url').getBundleURL('7UhFu') + "empate.12d44ab5.png" + "?" + Date.now();
+},{"./helpers/bundle-url":"lgJ39"}],"bSzLa":[function(require,module,exports) {
+module.exports = require('./helpers/bundle-url').getBundleURL('7UhFu') + "lose.0b754534. jpg" + "?" + Date.now();
 
 },{"./helpers/bundle-url":"lgJ39"}]},["8wcER","h7u1C"], "h7u1C", "parcelRequire46e4")
 
