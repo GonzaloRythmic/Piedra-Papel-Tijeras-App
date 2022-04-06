@@ -52,8 +52,8 @@ export function initRouter(container: Element) {
     handleRoute(location.pathname);
   }
 
-  if (location.host.includes("github.io")) {
-    goTo("/cap5-FinalChallange");
+  if (location.host.includes(".github.io/cap5-FinalChallange")) {
+    goTo("/welcome");
   }
 
   //ESTO LO BORRE AL PRINCIPIO PERO PUEDE QUEDAR LUEGO
