@@ -27,36 +27,38 @@ const routes = [
 function isGithubPages() {
   return location.host.includes("github.io");
 }
+console.log(isGithubPages());
 
 export function initRouter(container: Element) {
   function goTo(path) {
-    const completePath = isGithubPages() ? BASE_PATH + path : path;
-    history.pushState({}, "", completePath);
-    handleRoute(completePath);
+    history.pushState({}, "", path);
+    handleRoute(path);
   }
 
   function handleRoute(route) {
-    const newRoute = isGithubPages() ? route.replace(BASE_PATH, "") : route;
+    container.innerHTML = "";
 
-    //Compara cada path con la collection y si alguna coincide
-    //ejecuta la función que acompaña
     for (const r of routes) {
-      if (r.path.test(newRoute)) {
-        const el = r.component({ goTo: goTo }) as any;
-
-        if (container.firstChild) {
-          container.firstChild.remove();
-        }
+      if (r.path.test(route)) {
+        const el = r.component({ goTo: goTo });
         container.appendChild(el);
       }
     }
   }
 
-  if (location.pathname == "/" || location.pathname == "/cap5-FinalChallange") {
+  if (location.pathname == "/") {
     goTo("/welcome");
   } else {
     handleRoute(location.pathname);
   }
+
+  if (location.host.includes("github.io")) {
+    goTo("/cap5-FinalChallange");
+  }
+
+  //ESTO LO BORRE AL PRINCIPIO PERO PUEDE QUEDAR LUEGO
+  /* handleRoute(location.pathname) */
+
   window.onpopstate = () => {
     handleRoute(location.pathname);
   };
