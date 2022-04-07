@@ -29,7 +29,6 @@ const state = {
     for (const cb of this.listeners) {
       cb();
     }
-    console.log("Soy el state, he cambiado", this.data);
     this.savedData();
   },
 
@@ -99,6 +98,8 @@ const state = {
     };
     currentState.currentGame.computerPlay = machineMove();
     this.setScore();
+    console.log(machineMove());
+    return machineMove();
   },
 
   savedData() {

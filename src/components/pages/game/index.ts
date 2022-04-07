@@ -52,12 +52,14 @@ export function initPlay(param){
      
             if (type === "scissors") {
             state.setMove("scissors");
-            console.log(type);
+            
             } else if (type === "rock") {
                 state.setMove("rock");
+               
             } else if (type === "paper") {
                 state.setMove("paper");
             }
+        
         });
     }
 

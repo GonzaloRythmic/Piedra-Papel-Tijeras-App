@@ -29,7 +29,6 @@ export function initRouter(container: Element) {
   function goTo(path) {
     history.pushState({}, "", path);
     handleRoute(path);
-    console.log(path)
   }
 
   function handleRoute(route) {
