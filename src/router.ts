@@ -24,15 +24,12 @@ const routes = [
   },
 ];
 
-function isGithubPages() {
-  return location.host.includes("github.io");
-}
-console.log(isGithubPages());
-
 export function initRouter(container: Element) {
+
   function goTo(path) {
     history.pushState({}, "", path);
     handleRoute(path);
+    console.log(path)
   }
 
   function handleRoute(route) {
@@ -52,12 +49,9 @@ export function initRouter(container: Element) {
     handleRoute(location.pathname);
   }
 
-  if (location.host.includes("github.io")) {
+  if (location.host.includes(".github.io")) {
     goTo("/cap5-FinalChallange");
   }
-
-  //ESTO LO BORRE AL PRINCIPIO PERO PUEDE QUEDAR LUEGO
-  /* handleRoute(location.pathname) */
 
   window.onpopstate = () => {
     handleRoute(location.pathname);
