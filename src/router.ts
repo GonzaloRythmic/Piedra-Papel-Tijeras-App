@@ -50,7 +50,7 @@ export function initRouter(container: Element) {
   }
 
   if (location.host.includes(".github.io")) {
-    goTo("/welcome");
+    goTo("cap5-FinalChallenge/welcome");
   }
 
   window.onpopstate = () => {
