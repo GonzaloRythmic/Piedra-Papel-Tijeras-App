@@ -25,10 +25,13 @@ export function initResults(param){
   } else if (whoWins === "loss") {
     imagen = resultImages.loss;
     background = "rgba(137, 73, 73, 0.6)";
-  } else {
+  } else if (whoWins === "tie") {
     imagen = resultImages.tie;
     background = "rgba(106, 112, 101, 0.6)";
   }
+
+  console.log("Soy la variable computerPlay", computerPlay)
+  console.log("Soy la variable myPlay",myPlay )
     
   const button = require("url:../../../images/boton. jpg");
   const style = document.createElement("style");
@@ -51,9 +54,6 @@ export function initResults(param){
     param.goTo("./game");
   });
     
-    //div.querySelector(".back").addEventListener("click", () => {
-    //     param.goTo("/welcome");
-    // });
 
   style.innerHTML = `
     .container__results {

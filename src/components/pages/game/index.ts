@@ -48,7 +48,7 @@ export function initPlay(param){
                 clearInterval(downloadTimer);
                 param.goTo("/results");
             }, 1300);
-            console.log(type);
+            console.log("Tu has elegido", type);
      
             if (type === "scissors") {
             state.setMove("scissors");

@@ -83,9 +83,17 @@ const state = {
 
     if (youWin) {
       return "wins";
-    } else {
-      return "loss";
+    } 
+
+    const looseS: boolean = myPlay == "scissors" && computerPlay == "rock";
+    const looseR: boolean = myPlay == "rock" && computerPlay == "paper";
+    const looseP: boolean = myPlay == "paper" && computerPlay == "scissors";
+    const youLoose = [looseS, looseR, looseP].includes(true);
+
+    if (youLoose) {
+      return "loss"
     }
+
   },
 
   //SAVE THE MOVEMENT AND SUMMON THE SCORE
@@ -98,7 +106,7 @@ const state = {
     };
     currentState.currentGame.computerPlay = machineMove();
     this.setScore();
-    console.log(machineMove());
+    console.log("La maquina ha jugado", machineMove());
     return machineMove();
   },
 
