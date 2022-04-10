@@ -41,10 +41,10 @@ export function initResults(param){
     </div>
     <div class="board">
       <div>
-        <h3>Score</h3>
+        <h3 class = score>Score</h3>
       </div>
-        <text-comp>Vos: ${currentState.history.myScore}</text-comp>
-        <text-comp>Máquina: ${currentState.history.computerScore}</text-comp>
+        <h3 class = you>Vos: ${currentState.history.myScore}</h3>
+        <h3 class = machine>Máquina: ${currentState.history.computerScore}</h3>
     </div>
       <img class = home-button src="${button}">
     </div>
@@ -79,7 +79,7 @@ export function initResults(param){
     margin: 5px 0;
     background-color: #fff;
     }
-    .board  h3 {
+    .board {
     text-align: center;
     font-size: 40px;
     font-weight: 700;
@@ -90,6 +90,20 @@ export function initResults(param){
     }
     .back {
     margin-top: 10px;
+    }
+    .score{
+      font-family: "Anton";
+      font-size: 50px;
+    }
+    .you {
+      text-align: right;
+      font-family: "Padauk";
+      font-size: 30px;
+    }
+    .machine{
+      text-align: right;
+      font-family: "Padauk";
+      font-size: 30px;
     }
   `;
 
