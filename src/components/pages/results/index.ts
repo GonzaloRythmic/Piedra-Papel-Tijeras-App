@@ -16,11 +16,10 @@ export function initResults(param){
   const computerPlay = currentGame.computerPlay;
   const whoWins = state.whoWins(myPlay, computerPlay);
   
-  //ADD STYLES TO THE BACKGROUND RESULT AND IMG
   let background;
   let imagen;
   if (whoWins === "wins") {
-    imagen = resultImages.win; // empate buscar imagen 
+    imagen = resultImages.win; 
     background = "rgba(136, 137, 73, 0.6)";
   } else if (whoWins === "loss") {
     imagen = resultImages.loss;
