@@ -8,7 +8,7 @@ export function initShowHands(param): HTMLElement  {
     const rock = require("url:../../../images/piedra. jpg")
     const sisors = require("url:../../../images/tijera. jpg")
     const paper = require("url:../../../images/papel. jpg")
-    const vs = require ("url:../../../images/vs(2).png");
+    const vs = require ("url:../../../images/vs(3).png");
 
     div.innerHTML= `
         <div class = img_container-machine>
@@ -39,33 +39,19 @@ export function initShowHands(param): HTMLElement  {
             position: absolute; bottom: 0;
         }
         .vs_container {
-            width: 100%;
-            height: 470px;
+            width: 100px;
+            height: 300px;
             display: flex;
             justify-content: center;
             align-items: center; 
             margin: 0 auto;
-
-            animation-duration: 0.5s;
-            animation-name: animate-fade;
-            animation-delay: 0.5s;
-            animation-fill-mode: backwards;
+            margin-top: 100px;
         }
-        @keyframes animate-fade {
-            0% {
-              opacity: 0;
-            }
-            100% {
-              opacity: 1;
-            }
-          }
+        .vs_image {
+            width: 300px;
+            height: 300px;
         }
-        .vs_image{
-            filter: brightness(1:1);
-            mix-blend-mode: multiply;
-            width: 150px;
-            height: 150px;
-        }
+      
         .img-machine {
             transform:rotate(180deg);
             -ms-transform:rotate(180deg); /* IE 9 */
@@ -77,7 +63,6 @@ export function initShowHands(param): HTMLElement  {
 
     //Verificamos jugadad de la máquina. 
     const imgElMachine = div.querySelector("img");
-    console.log ("Etiqueta imagen jugada por la maquina es ", imgElMachine);
 
     if (computer == "scissors") {
         imgElMachine.src = sisors;
@@ -88,8 +73,7 @@ export function initShowHands(param): HTMLElement  {
     }
 
      //Verificamos jugada del usuario.
-    const imgElYou = div.querySelector(".img-you"); //ETIQUETA QUE QUIERO CAPTURAR.
-    console.log ("Etiqueta imagen jugada usuario", imgElYou);   //AQUI ESTÁ EL ERROR. 
+    const imgElYou = (div.querySelector(".img-you")) as HTMLImageElement;    
 
     if (my == "scissors" ) {
         imgElYou.src = sisors;
@@ -101,7 +85,7 @@ export function initShowHands(param): HTMLElement  {
 
     setTimeout(() => {
         param.goTo("/results");
-    }, 3500);
+    }, 3000);
 
 
     div.appendChild(style);

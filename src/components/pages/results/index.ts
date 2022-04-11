@@ -29,8 +29,6 @@ export function initResults(param){
     background = "rgba(106, 112, 101, 0.6)";
   }
 
-  console.log("Soy la variable computerPlay", computerPlay)
-  console.log("Soy la variable myPlay",myPlay )
     
   const button = require("url:../../../images/boton. jpg");
   const style = document.createElement("style");
