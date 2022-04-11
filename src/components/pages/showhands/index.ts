@@ -17,7 +17,7 @@ export function initShowHands(param): HTMLElement  {
             <img class = img>
         </div>
         <div class = img_container-you>
-            <img id = img-you>
+            <img id = img-you> 
         </div>
     `
     const style = document.createElement("style");
@@ -25,10 +25,10 @@ export function initShowHands(param): HTMLElement  {
 
     `
     //Verificamos jugadad de la máquina. 
-    const imgElMachine = div.querySelector("img");
+    const imgElMachine = div.querySelector("img"); //ETIQUETA QUE CAPTURA PERFECTAMENTE.
     console.log ("Etiqueta imagen jugada por la maquina es ", imgElMachine);
 
-    const imgElYou = div.querySelector("img-you");
+    const imgElYou = div.querySelector("img-you"); //ETIQUETA QUE QUIERO CAPTURAR.
     console.log ("Etiqueta imagen jugada usuario", imgElYou);   //AQUI ESTÁ EL ERROR. 
 
 
