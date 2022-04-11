@@ -46,9 +46,8 @@ export function initPlay(param){
 
             setTimeout(() => {
                 clearInterval(downloadTimer);
-                param.goTo("/results");
+                param.goTo("/showhands");
             }, 1300);
-            console.log("Tu has elegido", type);
      
             if (type === "scissors") {
             state.setMove("scissors");

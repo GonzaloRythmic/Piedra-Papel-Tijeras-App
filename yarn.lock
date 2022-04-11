@@ -585,6 +585,13 @@
   "resolved" "https://registry.npmjs.org/@trysound/sax/-/sax-0.2.0.tgz"
   "version" "0.2.0"
 
+"@types/jquery@^3.5.14":
+  "integrity" "sha512-X1gtMRMbziVQkErhTQmSe2jFwwENA/Zr+PprCkF63vFq+Yt5PZ4AlKqgmeNlwgn7dhsXEK888eIW2520EpC+xg=="
+  "resolved" "https://registry.npmjs.org/@types/jquery/-/jquery-3.5.14.tgz"
+  "version" "3.5.14"
+  dependencies:
+    "@types/sizzle" "*"
+
 "@types/node@^17.0.23":
   "integrity" "sha512-UxDxWn7dl97rKVeVS61vErvw086aCYhDLyvRQZ5Rk65rZKepaFdm53GeqXaKBuOhED4e9uWq34IC3TdSdJJ2Gw=="
   "resolved" "https://registry.npmjs.org/@types/node/-/node-17.0.23.tgz"
@@ -594,6 +601,11 @@
   "integrity" "sha512-//oorEZjL6sbPcKUaCdIGlIUeH26mgzimjBB77G6XRgnDl/L5wOnpyBGRe/Mmf5CVW3PwEBE1NjiMZ/ssFh4wA=="
   "resolved" "https://registry.npmjs.org/@types/parse-json/-/parse-json-4.0.0.tgz"
   "version" "4.0.0"
+
+"@types/sizzle@*":
+  "integrity" "sha512-JYM8x9EGF163bEyhdJBpR2QX1R5naCJHC8ucJylJ3w9/CVBaskdQ8WqBf8MmQrd1kRvp/a4TS8HJ+bxzR7ZJYQ=="
+  "resolved" "https://registry.npmjs.org/@types/sizzle/-/sizzle-2.3.3.tgz"
+  "version" "2.3.3"
 
 "abortcontroller-polyfill@^1.1.9":
   "integrity" "sha512-zetDJxd89y3X99Kvo4qFx8GKlt6GsvN3UcRZHwU6iFA/0KiOmhkTVhe8oRoTBiTVPZu09x3vCra47+w8Yz1+2Q=="

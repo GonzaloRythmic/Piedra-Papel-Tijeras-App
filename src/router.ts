@@ -2,7 +2,7 @@ import { initHome } from "./components/pages/home";
 import {initInstructions} from "./components/pages/intructions";
 import {initPlay} from "./components/pages/game";
 import {initResults} from "./components/pages/results";
-
+import {initShowHands} from "./components/pages/showhands";
 const BASE_PATH = "/cap5-FinalChallange";
 
 const routes = [
@@ -17,6 +17,10 @@ const routes = [
   {
     path: /\/game/,
     component: initPlay,
+  },
+  {
+    path: /\/showhands/,
+    component: initShowHands,
   },
   {
     path: /\/results/,

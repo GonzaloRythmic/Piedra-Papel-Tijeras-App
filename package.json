@@ -4,8 +4,6 @@
 
     "version": "1.0.0",
 
-    
-
     "license": "MIT",
 
     "scripts": {
@@ -19,6 +17,8 @@
     },
 
     "devDependencies": {
+
+        "@types/jquery": "^3.5.14",
 
         "@types/node": "^17.0.23",
 

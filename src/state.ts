@@ -106,7 +106,6 @@ const state = {
     };
     currentState.currentGame.computerPlay = machineMove();
     this.setScore();
-    console.log("La maquina ha jugado", machineMove());
     return machineMove();
   },
 
